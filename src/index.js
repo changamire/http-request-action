@@ -1,6 +1,7 @@
 const core = require("@actions/core");
 const { request, METHOD_POST } = require('./httpClient');
 const { GithubActions } = require('./githubActions');
+const https = require('https');
 
 let auth = undefined
 let customHeaders = {}
